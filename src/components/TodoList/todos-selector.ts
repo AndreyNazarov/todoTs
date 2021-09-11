@@ -1,10 +1,10 @@
 import { createSelector } from '@reduxjs/toolkit';
-import {IItem, IFilter} from '../../interfaces'
+import {IItem, IState} from '../../interfaces'
 
-export const allTodos =  (state: any) => state.todo.items;
-export const getFilter =  (state: any ) => state.todo.filter;
+export const allTodos =  (state: IState) => state.todo.items;
+export const getFilter =  (state: IState ) => state.todo.filter;
 
-export const getTotalTodoCount = (state: number) => {
+export const getTotalTodoCount = (state: IState) => {
   const todos = allTodos(state);
   return todos.length - 1;
 };

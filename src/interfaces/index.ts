@@ -9,9 +9,13 @@ export interface IItem {
   createdAt?: string
 }
 
-export interface IFilter {
+export interface ITodoState {
   items: any,
   filter: string, 
   loader: boolean, 
   error: null
+}
+
+export interface IState{
+  todo: ITodoState
 }

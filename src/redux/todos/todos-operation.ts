@@ -6,9 +6,10 @@ import {
   fetchEditItem,
   
 } from '../../service/fetchApi';
+import {Dispatch } from '@reduxjs/toolkit';
 import {IItem} from '../../interfaces'
 
-export const getAllItem = () => async (dispatch: any) => {
+export const getAllItem = () => async (dispatch: Dispatch) => {
   dispatch(action.getAllTodoRequest());
   try {
     const response = await fetchGetTodo();
@@ -19,7 +20,7 @@ export const getAllItem = () => async (dispatch: any) => {
   }
 };
 
-export const addItem = (item: string) => async (dispatch: any) => {
+export const addItem = (item: string) => async (dispatch: Dispatch) => {
   console.log("teeeest", typeof dispatch, item);
   
   dispatch(action.addTodoRequest());
@@ -32,7 +33,7 @@ export const addItem = (item: string) => async (dispatch: any) => {
   }
 };
 
-export const deleteItem =( item: any) => async (dispatch: any) => {
+export const deleteItem =( item: any) => async (dispatch: Dispatch) => {
   dispatch(action.deleteTodoRequest());
   try {
     const response = await fetchDeleteItem(item);
@@ -42,7 +43,7 @@ export const deleteItem =( item: any) => async (dispatch: any) => {
   }
 };
 
-export const editItem = (item: IItem) => async (dispatch: any) => {
+export const editItem = (item: IItem) => async (dispatch: Dispatch) => {
   const { todo, id } = item;
   const update = {
     todo,

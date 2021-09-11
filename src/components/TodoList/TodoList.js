@@ -48,7 +48,7 @@ export function ToDoList() {
   };
 
   return (
-    <CardList>
+    <CardList >
       {items &&
         items.map(item => (
           <>

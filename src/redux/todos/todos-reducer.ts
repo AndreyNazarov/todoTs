@@ -1,4 +1,4 @@
-import { createReducer, combineReducers } from '@reduxjs/toolkit';
+import { createReducer, combineReducers, Dispatch } from '@reduxjs/toolkit';
 import * as action from './todos-actions';
 import {IItem} from '../../interfaces'
 
