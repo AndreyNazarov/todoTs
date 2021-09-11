@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/todoTs/static/css/main.29cae42d.chunk.css",
+    "main.js": "/todoTs/static/js/main.5e04e6eb.chunk.js",
+    "main.js.map": "/todoTs/static/js/main.5e04e6eb.chunk.js.map",
+    "runtime-main.js": "/todoTs/static/js/runtime-main.e46fe197.js",
+    "runtime-main.js.map": "/todoTs/static/js/runtime-main.e46fe197.js.map",
+    "static/css/2.4324847d.chunk.css": "/todoTs/static/css/2.4324847d.chunk.css",
+    "static/js/2.93cec9ab.chunk.js": "/todoTs/static/js/2.93cec9ab.chunk.js",
+    "static/js/2.93cec9ab.chunk.js.map": "/todoTs/static/js/2.93cec9ab.chunk.js.map",
+    "index.html": "/todoTs/index.html",
+    "static/css/2.4324847d.chunk.css.map": "/todoTs/static/css/2.4324847d.chunk.css.map",
+    "static/css/main.29cae42d.chunk.css.map": "/todoTs/static/css/main.29cae42d.chunk.css.map",
+    "static/js/2.93cec9ab.chunk.js.LICENSE.txt": "/todoTs/static/js/2.93cec9ab.chunk.js.LICENSE.txt",
+    "static/media/cardHeader.a7c2cc82.jpg": "/todoTs/static/media/cardHeader.a7c2cc82.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e46fe197.js",
+    "static/css/2.4324847d.chunk.css",
+    "static/js/2.93cec9ab.chunk.js",
+    "static/css/main.29cae42d.chunk.css",
+    "static/js/main.5e04e6eb.chunk.js"
+  ]
+}
