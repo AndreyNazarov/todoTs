@@ -10,7 +10,7 @@ export interface IItem {
 }
 
 export interface ITodoState {
-  items: any,
+  items: IItem[],
   filter: string, 
   loader: boolean, 
   error: null
