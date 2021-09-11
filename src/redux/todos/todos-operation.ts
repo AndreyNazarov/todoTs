@@ -7,7 +7,7 @@ import {
   
 } from '../../service/fetchApi';
 import {Dispatch } from '@reduxjs/toolkit';
-import {IItem} from '../../interfaces'
+import {IItem, ITodoState, IState} from '../../interfaces'
 
 export const getAllItem = () => async (dispatch: Dispatch) => {
   dispatch(action.getAllTodoRequest());
@@ -33,7 +33,7 @@ export const addItem = (item: string) => async (dispatch: Dispatch) => {
   }
 };
 
-export const deleteItem =( item: any) => async (dispatch: Dispatch) => {
+export const deleteItem = (item: IItem) => async (dispatch: Dispatch) => {
   dispatch(action.deleteTodoRequest());
   try {
     const response = await fetchDeleteItem(item);

@@ -3,7 +3,7 @@ import * as action from './todos-actions';
 import {IItem} from '../../interfaces'
 
 const todoReducer = createReducer([], {
-  [action.getAllTodoSuccess.type]: (_, action: any) => {
+  [action.getAllTodoSuccess.type]: (_, action) => {
     
     return action.payload.map((item: IItem) => {
       return {
@@ -12,8 +12,8 @@ const todoReducer = createReducer([], {
       };
     });
   },
-  [action.addTodoSuccess.type]: (state: IItem[], { payload }: any) => [...state, payload],
-  [action.deleteTodoSuccess.type]: (state: IItem[], { payload }: any) =>
+  [action.addTodoSuccess.type]: (state: IItem[], { payload }) => [...state, payload],
+  [action.deleteTodoSuccess.type]: (state: IItem[], { payload }) =>
     state.filter((item: IItem) => item.id !== payload.id),
   [action.editTodoSuccess.type]: (state: IItem[], { payload }) =>
     state.map((item: IItem) => (item.id === payload.id ? payload : item)),

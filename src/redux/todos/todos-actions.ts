@@ -9,7 +9,7 @@ export const addTodoSuccess = createAction<string, string>('todo/addItemSuccess'
 export const addTodoError = createAction<any>('todo/addItemError');
 
 export const deleteTodoRequest = createAction<undefined>('todo/deleteItemRequest');
-export const deleteTodoSuccess = createAction<string, string>('todo/deleteItemSuccess');
+export const deleteTodoSuccess = createAction<any, any>('todo/deleteItemSuccess');
 export const deleteTodoError = createAction<any>('todo/deleteItemError');
 
 export const editTodoRequest = createAction<undefined>('todo/editItemRequest');
